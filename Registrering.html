@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <script src="../js/script.js"></script>
+
+<!--validering med hjälp av javascript-->
+    <h2>Registreringsformulär</h2>
+    
+    <form id="registration" onsubmit="return validateForm()">
+        <label for="username">Användarnamn:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Lösenord  måste minst vara 6 tecken:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="confirmPassword">Bekräfta lösenord:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+
+        <label for="email">E-postadress:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Jag har läst villkoren</label>
+        <br>
+
+        <input type="submit" value="Registrera">
+    </form>
+<!--validering med hjälp av html endast.-->
+    <form>
+        <label for="username">Användarnamn:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Lösenord:</label>
+        <input type="password" id="password" name="password" minlength="6" required><br>
+
+        <label for="confirmPassword">Bekräfta lösenord:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" required><br>
+
+        <label for="email">E-postadress:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <input type="checkbox" id="terms" name="terms" required> Jag har läst och accepterar villkoren<br>
+
+        <input type="submit" value="Registrera">
+    </form>
+    
+</body>
+</html>
